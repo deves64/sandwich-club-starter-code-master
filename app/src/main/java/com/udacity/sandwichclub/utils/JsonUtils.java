@@ -14,10 +14,6 @@ public class JsonUtils {
     public static Sandwich parseSandwichJson(String json) {
         Sandwich model = new Sandwich();
 
-        final HashMap<String, String> sandwichMap = new HashMap<>();
-
-        sandwichMap.put("", "");
-
         try {
            JSONObject sandwichDetails = new JSONObject(json);
            JSONObject nameDetails = sandwichDetails.optJSONObject("name");
